@@ -40,6 +40,7 @@
 #include "config.h"
 
 #if defined(HAVE_HASH_MAP) && defined(HAVE_HASH_SET)
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include HASH_MAP_H
 #include HASH_SET_H
 #else
